@@ -1,0 +1,35 @@
+---
+title: "Incom Data Analysis"
+author: "Yingdan Xia 08/03/2019"
+date: "8/3/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(readr)
+income <- read_csv("income.csv")
+```
+
+## Introduction
+
+The income.csv contains data for gender-based weekly income amount in various industry and occupation.
+By looking at the csv file, I come up with following question: what is industry that owns the greatest average weekly income for female workers?
+
+Data Summary:
+```{r income}
+summary(income)
+```
+
+## Analysis
+
+First, I need to group this dataset by industries, since we do not care about specific occupation.
+Then apply a linear regression.
+Finally plot the results.
+```{r}
+
+```
+
+## Conclusion
+
+As a result, Management Industry owns the greatest average weekly income for female workers.
