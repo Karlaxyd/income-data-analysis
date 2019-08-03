@@ -8,7 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(readr)
-income <- read_csv("income.csv")
+income <- read_csv("../data/income.csv")
 ```
 
 ## Introduction
